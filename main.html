@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head><a name="h"></a>
+        <meta charset="utf-8">
+        <title>오형석의 WEB PROJECT</title>
+       
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <header>
+            
+            <div calss="head">
+                <nav>
+                    <ul class="nav-container">
+                        <li class="nav-item"><a href="#grid">프로필</a></li>
+                        <li class="nav-item"><a href="#introduction">프로젝트 소개</a></li>
+                        <li class="nav-item"><a href="#display">화면전환</a> </li>
+                        <li class="nav-item"><a href="#form">form</a></li>
+                        <li class="nav-item"><a href="#instagram">instagram</a></li>
+                    </ul>
+                </nav>
+                <a class="banner" href="main.html"><img src="OhyeongSeok.jpg" width="400"></a>
+            </div>
+            
+        </header>
+    <div id="grid">
+        <img src="img.jpg" onclick="alert('click')" id="me" width="250">
+        <div id="introduce">
+            <h2 class="profile">PROFILE</h2>
+                <dl>
+                    <dt class="key">NAME</dt>                            
+                    <dd class="value">오형석</dd>
+                </dl>
+                <dl>
+                    <dt class="key">STUDENT NUMBER</dt>
+                    <dd class="value">1801175</dd>
+                </dl>
+                <dl>
+                    <dt class="key">EMAIL</dt>
+                    <dd class="value">dhgudtjr6635@gmail.com</dd>
+                </dl>   
+        </div>
+        
+    </div>
+    <div id="introduction">
+        <h2 class="intro_pj">WEB 프로젝트 소개</h2>
+        <p class="intro_pj">
+            이번 WEB 프로젝트는<br>
+             html,css,javascript를 통해서<br>구현해 보았습니다.
+        </p>
+    </div>
+    <div id="display">
+        <h2 class="display_title">화면모드 전환</h2>
+        <p class="display_intro">
+            자바스크립트를 통해서<br> 다크모드 전환 구현
+            <input id="night_day" type="button", value="night" onclick="
+        nightDayHandler(this);
+        ">
+        </p>
+        
+    </div>
+    <div id="form">
+        <h2 class="form_title">form</h2>
+        <p id="form_intro">
+            <form id='target' action="">
+                <p>아이디:<input type="text" name="id"></p>
+                <p>비밀번호:<input type="password" name="pwd"></p>
+                <input type="submit" title="제출">
+            </form>
+            </form>
+        </p>
+       
+       
+    </div>
+    
+    <article id="instagram">
+        <div class="text">
+             <a href="https://www.instagram.com/ohs_9902/" target="blank"><h1>Instagram</h1></a>    
+        </div>
+    </article>
+        
+    
+    <script src="main.js"></script>
+    </body>
+</html>
